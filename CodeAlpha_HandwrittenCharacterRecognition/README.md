@@ -28,7 +28,8 @@ This beginner-friendly deep learning project walks you through building and trai
 📁 **Project Structure**  
 ```
 mnist-digit-classifier/
-├── main.py                   # Core CNN training + prediction code
+├── digit_classifier.py       # Main
+├── digit_classifier.ipynb    # Jupyter Notebook
 ├── README.md                 # Project overview and guide
 ├── requirements.txt          # Required Python libraries
 └── sample_digit.png          # Example input image (optional)
