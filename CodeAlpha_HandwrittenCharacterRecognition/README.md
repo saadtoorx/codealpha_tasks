@@ -1,43 +1,85 @@
-# 🧠 MNIST Handwritten Digit Classifier
-
-This project is a simple yet powerful Convolutional Neural Network (CNN) model trained on the MNIST dataset to recognize handwritten digits (0-9). It also includes a feature to predict digits from your own image files using the trained model.
+🔢 Classify handwritten digits (0–9) using a Convolutional Neural Network (CNN) trained on the MNIST dataset — and even predict digits from your own custom images!
 
 ---
 
-## 📁 Dataset
-
-- **MNIST Dataset** from `tensorflow.keras.datasets`
-- Contains **60,000 training images** and **10,000 test images**
-- Each image is **28x28 pixels**, grayscale
+🧠 **About the Project**  
+This beginner-friendly deep learning project walks you through building and training a CNN to recognize handwritten digits using the popular MNIST dataset. With over 98% accuracy, the model can also classify digits from your own image input — just upload a photo of a digit, and the model does the rest!
 
 ---
 
-## 🧠 Model Architecture
-
-- **Input Layer**: (28, 28, 1)
-- **Conv2D Layer 1**: 32 filters, (3x3), ReLU
-- **MaxPooling Layer**: (2x2)
-- **Conv2D Layer 2**: 64 filters, (3x3), ReLU
-- **Flatten**
-- **Dense Layer**: 64 neurons, ReLU
-- **Output Layer**: 10 neurons, Softmax (for digits 0-9)
+🚀 **Features**  
+📦 Load and preprocess the MNIST dataset  
+🧠 Build a CNN from scratch with TensorFlow/Keras  
+📊 Train and evaluate model accuracy  
+🖼️ Predict digits from user-uploaded images  
+🎨 Visualize digit images and predictions  
 
 ---
 
-## 🛠️ Tech Stack & Libraries
-
-- Python
-- TensorFlow / Keras
-- NumPy
-- Pillow (PIL)
-- Matplotlib
+🛠️ **Tech Stack**  
+- Python 3.x  
+- TensorFlow / Keras  
+- NumPy  
+- Pillow (PIL)  
+- Matplotlib  
 
 ---
 
-## 🚀 How to Use
+📁 **Project Structure**  
+```
+mnist-digit-classifier/
+├── main.py                   # Core CNN training + prediction code
+├── README.md                 # Project overview and guide
+├── requirements.txt          # Required Python libraries
+└── sample_digit.png          # Example input image (optional)
+```
 
-### 🔧 1. Clone the Repository
+---
 
+💻 **How to Run**
+
+**1. Clone the Repository**
 ```bash
-git clone https://github.com/saadtoorx/MNIST-Digit-Classifier.git
-cd MNIST-Digit-Classifier
+git clone https://github.com/saadtoorx/mnist-digit-classifier.git
+cd mnist-digit-classifier
+```
+
+**2. Install Dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+**3. Run the Classifier**
+```bash
+python main.py
+```
+
+**4. Provide an Image Path When Prompted**
+```
+Enter path to the image with extension: my_digit.png
+🧠 Predicted Digit: 7
+```
+
+> 💡 Tip: Use a 28x28 pixel grayscale image with the digit written in black on a white background (or vice versa — the model auto-inverts it if needed).
+
+---
+
+📷 **Sample Output**  
+- Accuracy: ~98% on test data  
+- Predicts digit from user-uploaded image  
+- Model output:
+  ```
+  🧠 Predicted Digit: 4
+  ```
+
+---
+
+🧾 **License**  
+This project is licensed under the MIT License.
+
+---
+
+👤 **Author**  
+Made with ❤️ by [@saadtoorx](https://github.com/saadtoorx)
+
+If you found this useful, feel free to fork, explore, and ⭐ the repo!
