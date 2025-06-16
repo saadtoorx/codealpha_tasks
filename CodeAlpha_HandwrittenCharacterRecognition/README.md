@@ -32,7 +32,9 @@ mnist-digit-classifier/
 ├── digit_classifier.ipynb    # Jupyter Notebook
 ├── README.md                 # Project overview and guide
 ├── requirements.txt          # Required Python libraries
-└── sample_digit.png          # Example input image (optional)
+├── images                    # images folder
+  └── sample_digit0.png       # Example input image
+  └── sample_digit7.png       # Example input image
 ```
 
 ---
